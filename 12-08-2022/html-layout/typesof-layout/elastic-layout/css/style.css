@@ -1,0 +1,92 @@
+/* elastic layout : when we mention  a width or height resulations in em(emphasized) that type of layout is called elastic layout
+1px=1/16em;
+
+eg: width:64em;
+    height:42.375em;  
+    margin:0.0625em;
+    padding:0.0625em;
+*/
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f1f3f6;
+}
+html ul li 
+{
+    margin: auto;
+    padding: auto;
+}
+.header 
+{
+    width: 1430px;
+    height: 80px;
+    background-color: #2874f0;
+    position: sticky;
+    top: 0;
+
+}
+.navbar 
+{
+    width: 1430px;
+    height: 140px;
+    background-color: #ffffff;
+
+}
+.navbar-link
+{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar-link li 
+{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    padding: 30px 35px;
+   
+}
+.navbar-link a 
+{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+  
+}
+.slider 
+{
+    width: 1300px;
+    height: 350px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.content 
+{
+    width: 1300px;
+    height: auto;
+    margin: auto;
+    margin-top: 25px;
+
+}
+
+.products-items
+{
+    width: 1300px;
+    height: 250px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.footer 
+{
+    width: 1430px;
+    height: 350px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #172337;
+}

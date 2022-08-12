@@ -1,0 +1,128 @@
+/* fluid layout : when we mention or consider a width resulations in % that type of layout is called fluid layout and its help a best for resposive.
+eg: width:100%;
+    height:100vh or px;  
+    margin:1%;
+    padding:1%;
+*/
+body 
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f1f3f6;
+    background: -webkit-gradient();
+    background: -moz-gradient();
+    background: -c-gradient();
+    background: -IE-gradient();
+    background: gradient();
+}
+html ul li 
+{
+    margin: auto;
+    padding: auto;
+}
+.header 
+{
+    width: 100%;
+    height: 80px;
+    background-color: #2874f0;
+    position: sticky;
+    top: 0;
+
+}
+.navbar 
+{
+    width: 100%;
+    height: 140px;
+    background-color: #ffffff;
+
+}
+.navbar-link
+{
+    margin: 0;
+    padding: 0;
+}
+.navbar-link li 
+{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding: 30px 35px;
+   
+}
+.navbar-link a 
+{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+  
+}
+.slider 
+{
+    width: 96%;
+    height: 350px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.content 
+{
+    width: 96%;
+    height: auto;
+    margin: auto;
+    margin-top: 25px;
+
+}
+
+.products-items
+{
+    width: 96%;
+    height: 250px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.footer 
+{
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #172337;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+
+.navbar 
+{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+
+}
+.navbar-link
+{
+    margin: 0;
+    padding: 0;
+}
+.navbar-link li 
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding: 8px 5px;
+   
+}
+.navbar-link a 
+{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+  
+}
+}
