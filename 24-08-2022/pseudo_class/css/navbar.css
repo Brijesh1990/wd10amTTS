@@ -1,0 +1,207 @@
+/* animations */
+@import url('animations.css');
+@import url('slider.css');
+@import url('causels.css');
+
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.navbar 
+{
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    background: -webkit-linear-gradient(left,black, lightgray);
+    background: -moz-linear-gradient(left,black, lightgray);
+    background: linear-gradient(to right,black, lightgray);   
+    display: flex !important;
+    flex-direction: row !important;
+    position: fixed;
+    z-index: 10 !important;
+   
+}
+#logo
+{
+    width: 30%;
+    height: auto;
+    font-size: 30px;
+    color: white !important;
+    float: left;
+}
+#menu 
+{
+    width: 70%;
+    height: auto;
+   
+}
+#menu ul li 
+{
+  display: inline-block;
+  padding: 5px 15px; 
+}
+#menu a 
+{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+}
+/* pseudo class */
+#menu a:hover 
+{
+  color: red;
+  text-decoration: underline;
+}
+#menu a:visited 
+{
+    color: greenyellow;
+    
+}
+#menu a:active 
+{
+    
+    color: yellow;
+}
+#menu a:link
+{
+    color: turquoise;
+}
+
+.content 
+{
+    width: 90%;
+    height: 350px;
+    margin: auto;
+    margin-left: 5%;
+    margin-top: 10%;
+    position: absolute;
+   
+}
+.slider 
+{
+    /* display: flex !important;
+    flex-direction: row !important; */
+    float: left;
+}
+.slider img
+{
+    width: 22%;
+    height: 350px;
+  
+}
+/* types of media query
+a) all 	    Used for all media type devices
+b) print 	Used for printers
+c) screen 	Used for computer screens, tablets, smart-phones etc.
+d) speech 	Used for screenreaders that "reads" the page out loud
+*/
+
+/* mobile resulations */
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    body
+    {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .navbar 
+    {
+        width: 100%;
+        height: auto;
+        padding: 25px;
+        background: -webkit-linear-gradient(left,black, lightgray);
+        background: -moz-linear-gradient(left,black, lightgray);
+        background: linear-gradient(to right,black, lightgray);   
+        position: fixed;
+        z-index: 10 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        
+       
+       
+    }
+    #logo
+    {
+        width: 100%;
+        height: auto;
+        font-size: 30px;
+        align-items: center;
+        text-align: center !important;
+        color: white !important;
+     
+    }
+    #menu 
+    {
+        width: 100%;
+        height: auto;
+    }
+    #menu ul li 
+    {
+      display: inline-block;
+      padding: 2px 2px; 
+    }
+    #menu a 
+    {
+        color: white;
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 20px;
+    }
+
+    
+.content 
+{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-left: 5%;
+    margin-top: 35%;
+    position: absolute;
+   
+}
+.slider 
+{
+    /* display: flex !important;
+    flex-direction: row !important; */
+    float: left;
+}
+.slider img
+{
+    width: 22%;
+    height: 150px;
+    margin-left: 2%;
+  
+}
+    
+}
+
+/* tablet resulations */
+@media only screen and (min-width:481px) and (max-width:767px)
+{
+    #menu ul li 
+    {
+      display: inline-block;
+      padding: 2px 6px; 
+    }
+    
+}
+
+/* Laptop */
+@media only screen and (min-width:768px) and (max-width:1024px)
+{
+    #menu ul li 
+    {
+      display: inline-block;
+      padding: 2px 2px; 
+    }
+}
+
+/* large desktop resulations */
+@media only screen and (min-width:1025px) and (max-width:1201px)
+{
+    
+}

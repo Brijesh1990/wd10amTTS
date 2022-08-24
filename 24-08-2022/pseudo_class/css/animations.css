@@ -1,0 +1,18 @@
+.navbar 
+{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    -webkit-animation:fadeInUpBig;
+    -webkit-animation-duration: 2s;
+    animation:fadeInUpBig !important;
+    animation-duration: 2s !important;
+}
+#logo 
+{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    -webkit-animation:flash 2s infinite;
+    animation:flash 2s infinite !important;
+}
