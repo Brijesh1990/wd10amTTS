@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/font-awesome.css'>
+    <script src='main.js'></script>
+    <style>
+        /* change body background color a time limit */
+        @-webkit-keyframes anim
+        {
+          0% 
+          {
+            top: 0;
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+          }
+          40% 
+          {
+            top: 0;
+            margin: 0;
+            padding: 0;
+            background-color: yellow;
+          }
+
+          80% 
+       
+          {
+            top: 0;
+            margin: 0;
+            padding: 0;
+            background-color: tomato;
+          }
+
+          100% 
+          {
+            top: 0;
+            margin: 0;
+            padding: 0;
+            background-color: springgreen;
+          }
+
+        }
+        body 
+        {
+           
+            margin: 0;
+            padding: 0;
+            animation: anim infinite 25s;
+        }
+        .header 
+        {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 10px;
+            background-color: gray;
+            display: flex;
+            position: sticky;
+            top: 0;
+            z-index: 5;
+        }
+        .logo 
+        {
+            width: 30%;
+            height: auto;
+            font-size: 25px;
+            margin: 5px;
+            padding: 15px 5px;
+        } 
+
+        .navbar 
+        {
+            width: auto;
+            height: auto;
+
+        }
+        .navbar ul li 
+        {
+            display: inline-block;
+            padding: 5px 15px;
+        }
+        .navbar a 
+        {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            list-style-type: none;
+
+        }
+        .slider 
+        {
+            width: 80%;
+            height: 450px;
+            margin: auto;
+            background: url('https://images.pexels.com/photos/2312369/pexels-photo-2312369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat;
+            background-size: 100% 450px;
+            margin-top: 2%;
+          
+        }
+
+        .slider h1 
+        {
+            text-align: center;
+            color: white;
+            font-size: 45px;
+            margin-top: 5%;
+            position: absolute;
+            margin-left: 22%;
+        }
+        .slider p 
+        {
+            width: 50%;
+            text-align: center;
+            position: absolute;
+            margin-top: 9%;
+            margin-left: 22%;
+            color: white;
+        }
+
+        .content
+        {
+            width: 100%;
+            height: 850px;
+
+        }
+        .like-us
+        {
+            width: auto;
+            height: auto;
+            background-color: rgba(20,0,0,0.9);
+            position: fixed;
+            margin: 5px;
+            padding: 10px;
+            margin-top: -25%;
+            color: white;
+            font-size: 25px;
+         
+        }
+        .like-us:hover 
+        {
+            width: auto;
+            height: auto;
+            font-size: 30px;
+            transition: 1s ease all;
+            
+          
+        }
+
+        .relative 
+        {
+             width: 60%;
+             height: 350px;
+             border: solid 4px black;
+             margin-left: 20%;
+             margin-top: 6%;
+             position: relative;
+             
+        }
+
+        .absolute 
+        {
+            width: 300px;
+            height: 250px;
+            border: solid 4px red;
+            position: absolute;
+            margin-left: 62%;
+            margin-top: 5%;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Flipkart</div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contactus</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- slider  -->
+    <div class="slider">
+        <h1>Best training Institute in Rajkot</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quasi sunt non, ipsum, nulla molestiae nihil incidunt officiis impedit delectus natus nisi pariatur, error vero optio architecto iure eaque earum?</p>
+    </div>
+    
+    <div class="content">
+    
+    <div class="like-us">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-instagram"></i>
+    </div>
+
+
+      <div class="relative">
+        relative
+        <div class="absolute">absolute</div>
+    </div> 
+    </div>
+    
+</body>
+</html>
