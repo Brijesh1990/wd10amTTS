@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>print</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function p()
+        {
+            document.getElementById("btn").style="display:none";
+            window.print();
+        }
+    </script>
+</head>
+<body>
+     <center>
+    <h1 align="center">My invoice</h1>
+    <p>Total is : Rs. 85465-/</p>
+    <button type="button" onclick="p()" id="btn">Print me!</button>
+    </center>
+</body>
+</html>

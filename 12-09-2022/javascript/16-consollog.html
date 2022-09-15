@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function a()
+        {
+        let n1=parseInt(document.getElementById("n1").value);
+        let n2=parseInt(document.getElementById("n2").value);
+        let c=n1+n2;
+        // document.write("Additions of numbers is :",c);
+        console.log("Additions of numbers is :",c);
+    
+        }
+      </script>
+</head>
+<body>
+    <center>
+        <h3>Add Numbers</h3>
+     
+        <form>
+            <label>Enter N1 numbers :</label>
+            <input type="text" name="n1" id="n1" placeholder="Enter N1 numbers" required><br><br>
+            <label>Enter N2 numbers :</label>
+            <input type="text" name="n2" id="n2" placeholder="Enter N2 numbers" required><br><br>
+            <button type="button" name="ad" onclick="a()">Add Number</button><br><br>
+        </form>
+    </center>
+    
+</body>
+</html>
