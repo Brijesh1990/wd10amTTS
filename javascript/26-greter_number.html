@@ -1,0 +1,42 @@
+<script type="text/javascript">
+
+    function abc()
+    {
+    // if elsif :for checking multiple condition at once time.
+    var a=parseInt(document.getElementById("a").value);
+    var b=parseInt(document.getElementById("b").value);
+    var c=parseInt(document.getElementById("c").value);
+    
+    if(a>b && a>c)
+    {
+        document.write('A is max numbers')
+    }
+    else if(b>c && b>a)
+    {
+        document.write('B is max numbers')
+    }
+    else if(c>a && c>b)
+    {
+        document.write('C is max numbers')
+    }
+    
+    else 
+    {
+        document.write('Somthing went wrong check it')
+    }
+}
+    
+    </script>
+  <center>
+    <form>
+        <label>Enter a value :</label>
+        <input type="text" id="a" placeholder="Enter a value"><br><br>
+        
+        <label>Enter b value :</label>
+        <input type="text" id="b" placeholder="Enter a value"><br><br>
+        
+        <label>Enter c value :</label>
+        <input type="text" id="c" placeholder="Enter a value"><br><br>
+        
+        <button type="button" id="btn"  onclick="abc()">Submit</button><br><br>
+    </form>
