@@ -1,0 +1,388 @@
+h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color:#3d2514 !important;
+}
+/* loader implement here */
+#loader 
+{
+    width: 300px;
+    height: 300px;
+    top: 20%;
+    left: 40%;
+    margin-top: 10%;
+    background: url('../images/loader2.gif') no-repeat;
+    background-size: 300px 300px;
+    position: relative;
+    
+}
+#loader-page 
+{
+    width: 700px;
+    height: 400px;
+    top: 20%;
+    left: 28%;
+    margin-top: 8%;
+    background: url('../images/loader-text.gif') no-repeat;
+    background-size: 700px 400px;
+    position: relative;
+    
+}
+#MymainPage
+{
+    display: none;
+}
+/* font-face */
+@font-face {
+    src: url('../fonts/ThumpersDemoBold.ttf');
+    font-family: alfaslab;
+}
+
+.main-header {
+    width: 100%;
+        height: 90vh;
+        background: url('../images/Rectangle.png') no-repeat;
+        background-size: cover;
+
+
+    }
+.sub-page-header 
+{
+width: 100%;
+height: 20vh;
+background: url('../images/Rectangle.png') no-repeat;
+background-size: cover;
+
+}
+.header {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    padding: 15px;
+
+}
+
+
+.header .logo img {
+    width: 65%;
+    height: auto;
+    margin-top: 2%;
+    margin-left: 18%;
+
+}
+
+.express-delivery {
+    margin-left: 50%;
+    color: #3d2514 !important;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.navbar {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-left: 60% !important;
+}
+
+.navbar .navbar-link li {
+    display: inline-block;
+    padding: 1px 25px;
+}
+
+.navbar .navbar-link a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #3d2514;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.slider {
+    width: 90%;
+    height: auto;
+}
+
+.slider-text {
+    width: 30%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 8%;
+    float: left;
+}
+
+.slider-text p {
+    width: auto;
+    height: auto;
+    border: dashed 2px #3d2514;
+    padding: 15px;
+
+}
+
+.slider-text h1 {
+    font-family: alfaslab !important;
+    font-size: 65px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    text-shadow: 1px 2px white !important;
+    text-transform: uppercase;
+    margin-left: 2%;
+    color: #3d2514;
+    line-height: 60px !important;
+
+}
+
+.week {
+    font-family: alfaslab !important;
+    font-size: 45px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    text-shadow: 1px 2px white !important;
+    text-transform: uppercase;
+    margin-left: 0%;
+    color: #3d2514;
+
+}
+
+.slide-img {
+    width: 55%;
+    height: auto;
+    float: right;
+
+
+}
+
+.slide-img img {
+    width: 80%;
+    height: 350px;
+    margin-left: 35%;
+    margin-top: 8%;
+    background-color: transparent !important;
+}
+
+.content {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+    justify-content: space-between;
+    color:#fff;
+    text-transform: uppercase;
+}
+.content-grid
+{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.content-grid1 {
+    width: 49%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.content-grid1 img{
+    width:100%;
+    height:100%;
+    transform: scale(1);
+    transition:500ms ;
+}
+
+.content-grid1 img:hover{
+    transform: scale(1.2);
+}
+
+.sub-title{
+    position: absolute;
+    top:20px;
+    left:15px;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.sub-title h3{
+    font-size: 25px;
+}
+
+.content-grid2 {
+    justify-content: space-between;
+    width: 49%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+
+  
+}
+
+.grid2-div {
+    width: 100%;
+    height: 190px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.grid2-div img {
+    width: 100%;
+    height:100%;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    transform: scale(1);
+    transition:500ms ;
+}
+
+.grid2-div img:hover{
+    transform: scale(1.2);
+}
+
+
+ /* burger button section */
+
+ .burger-btn{
+    width:100%;
+    height: auto;
+    margin-top: 4%;
+    text-align: center;
+ }
+
+ .burger-btn a{
+    background-color: #ffc045;
+    display: inline-block;
+    padding:15px; 
+    color:#3d2514;
+    font-family: sans-serif;   
+    font-size: 15px;
+    text-decoration: none;
+    transition:300ms;
+}
+
+.burger-btn a:hover{
+background-color: #3d2514;
+color:#ffc045;
+border-radius: 5px;
+}
+
+
+ /* burger choice section  */
+
+ .burger-choice{
+    width: 96% !important;
+    height: auto;
+    margin-left: 2%;    
+    text-align: center;
+    color:#3d2514;
+    line-height: 1.5;
+ }
+
+ .choice-div1{
+    width: 100% !important;
+    height: 200px;
+    margin: auto;
+    
+ }
+
+ .choice-div1 h2{
+
+    font-size: 45px;
+    text-align: center;
+    color: #3d2514 !important;
+    text-transform: uppercase;
+    margin-top: 2%;
+ }
+ .choice-div1 p{
+
+    width: 70%;
+    height: auto;
+    margin: auto; 
+    text-align: center;
+    color: #3d2514 !important;
+    text-transform: uppercase;
+    margin-top: 2%;
+ }
+
+
+.choice-div2{
+   
+    width: 96%;
+    height: auto;
+    margin: auto;
+    color: #3d2514;
+
+}
+.choice-subdiv
+{
+    width: 33%;
+    height: auto;
+    margin: auto;
+    float: left;
+}
+.choice-subdiv img
+{
+ width: 70%;
+ height: 220px;
+ margin: auto;
+ margin-left: 15%;  
+ /* box-shadow: 0px 8px 8px 0px #3d2514; */
+}
+#shadow
+{
+    width: 80%;
+    height: 40px;
+}
+.choice-subdiv h3,p
+{
+    padding: 5px 15px !important;
+}
+#order-now 
+{
+    background-color: #bf2222;
+    border: none;
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+}
+
+.upcom-events
+{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    box-shadow: 10px 10px 10px 0px gray;
+    margin-top: 5%;
+    color: #3d2514;
+    
+}
+.clearfix 
+{
+    clear: both;
+}
+
+.berger-content
+{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 20px;
+}
+.berger-content h1 
+{
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 2px;
+
+}
