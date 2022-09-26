@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculator in javascript</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='js/calc.js'></script>
+</head>
+<body>
+   
+    <div class="calc">
+        <table align="center" width="100%">
+        <tr>
+            <td><input type="text" name="clr"  placeholder="0" id="result"></td>
+        </tr>
+    </table>
+    </div>
+    <div class="calculator">
+     <table width="100%">
+        <tr colspan="4">
+            <td><button type="button" id="btn" value="7" onclick="return displ(this.value)">7</button></td>
+       
+            <td><button type="button" id="btn" value="8"  onclick="return displ(this.value)">8</button></td>
+      
+            <td><button type="button" id="btn" value="9"  onclick="return displ(this.value)">9</button></td>
+      
+            <td><button type="button" id="btn1"  onclick="return clr(this.value)">DEL</button></td>
+        </tr>
+        <tr colspan="4">
+            <td><button type="button" id="btn" value="4"  onclick="return displ(this.value)">4</button></td>
+       
+            <td><button type="button" id="btn" value="5"  onclick="return displ(this.value)">5</button></td>
+      
+            <td><button type="button" id="btn" value="6"  onclick="return displ(this.value)">6</button></td>
+      
+            <td><button type="button" id="btn1" value="/"  onclick="return displ1(this.value)">/</button></td>
+        </tr>
+
+        <tr colspan="4">
+            <td><button type="button" id="btn" value="1" onclick="return displ(this.value)">1</button></td>
+       
+            <td><button type="button" id="btn" value="2" onclick="return displ(this.value)">2</button></td>
+      
+            <td><button type="button" id="btn" value="3" onclick="return displ(this.value)">3</button></td>
+      
+            <td><button type="button" value="*" id="btn1" onclick="return displ1(this.value)">X</button></td>
+        </tr>
+
+        <tr colspan="4">
+            <td><button type="button" id="btn" value="." onclick="return displ(this.value)">.</button></td>
+       
+            <td><button type="button" id="btn" value="0" onclick="return displ(this.value)">0</button></td>
+      
+            <td><button type="button" id="btn" onclick="return finalresult(this.value)">=</button></td>
+      
+            <td><button type="button" id="btn1" value="+" onclick="return displ1(this.value)">+</button></td>
+        </tr>
+        
+         
+         
+        </tr>
+     </table>
+
+    </div>
+   
+   
+</body>
+</html>
