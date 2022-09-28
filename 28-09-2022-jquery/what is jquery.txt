@@ -1,0 +1,52 @@
+jquery is a client side scriptipting language
+jquery is used to access for effects on image, text and content
+jquery is called through its library or its CDN.
+jquery is used to access html elements or provides style on html elements.
+jquery is used jquery selector.
+jquery is a library of javascript.
+jquery provides inbuild events.
+   eg: hover , click , dblclick etc
+
+what is Jquery CDN 
+
+     cdn stands for content deleivery network
+         there are two types of CDN 
+             a)offline CDN
+             b)online CDN
+
+ jquery called in <body> and <head> both 
+ jquery is called using <script type="text/javascript"></script>
+ jquery is used to save file with its file extention .js 
+ how to call jquery as offline 
+     https://jquery.com/
+
+     a) offline CDN 
+          <head>
+          <script src='js/jquery.js'></script>
+          </head>
+
+     starter of jquery 
+       <script type="text/javascript">
+        $(document).ready(function(){
+          alert('Hi i am loading jquery please click on OK')
+          window.location='https://www.flipkart.com';    
+        });
+    </script>
+
+
+    a) online CDN 
+          <head>
+          <script src='js/jquery.js'></script>
+          </head>
+
+     starter of jquery 
+       <script type="text/javascript">
+        $(document).ready(function(){
+          alert('Hi i am loading jquery please click on OK')
+          window.location='https://www.flipkart.com';    
+        });
+    </script>     
+          
+
+
+

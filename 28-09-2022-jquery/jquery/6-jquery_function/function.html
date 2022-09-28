@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.6.1.min.js'></script>
+
+</head>
+<body>
+    <script type="text/javascript">
+
+        $(document).ready(function(){   
+        //  proides a element selector on button
+        $("body").css({"background-color":"lightgray","border":"none","color":"white"});
+          
+        $("#btn").css({"background-color":"red","border":"none","color":"white"});
+          
+        $("#btn").click(function(){   
+           
+            function test(fname)
+            {
+                alert('My name is :'+fname)
+            }
+            test("brijesh");
+
+        });
+        });
+    </script>
+    <center>
+    <button type="button" id="btn" class="btn btn1">click to Print</button>
+    </center>
+</body>
+</html>
