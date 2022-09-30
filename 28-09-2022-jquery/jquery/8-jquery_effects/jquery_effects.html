@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='js/jquery.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+         
+             $("#btn1,#btn2,#btn3").css({"background-color":"red","border":"none","color":"white","padding":"15px"});
+
+             $("#para").css({"background-color":"black","border":"none","color":"white","padding":"25px","width":"50%"});
+
+             $("#btn1").click(function(){
+
+                // $("#para").hide();
+                // $("#para").hide("slow");
+                // $("#para").hide("fast");
+                $("#para").hide(3000);
+             })
+              $("#btn2").click(function(){
+
+                // $("#para").show();
+                // $("#para").show("slow");
+                // $("#para").show("fast");
+                $("#para").show(3000);
+             })
+              $("#btn3").click(function(){
+
+                // $("#para").hide();
+                // $("#para").hide("slow");
+                // $("#para").hide("fast");
+                $("#para").toggle(3000);
+             })
+
+        });
+    </script>
+
+</head>
+<body>
+
+    <button type="button" id="btn1">ClickToHide</button>
+    <button type="button" id="btn2">ClickToShow</button>
+    <button type="button" id="btn3">ClickToToggle</button>
+    <p id="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vero nihil cumque. Facere eius quam sapiente, aut voluptate obcaecati quae exercitationem saepe suscipit doloribus numquam deserunt necessitatibus odio repellendus. Omnis!</p>
+    
+</body>
+</html>

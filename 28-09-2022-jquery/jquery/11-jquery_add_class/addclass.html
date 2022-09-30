@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='js/jquery.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#btn1").addClass("btn-style");
+            $("#btn1").click(function(){
+                $("b").prepend("<b>Pandey Ravindra bhai &nbsp;</b>");
+            });
+        });
+    </script>
+    <style>
+        .btn-style 
+        {
+            width:350px;
+            height: auto;
+            padding: 10px;
+            border: none;
+            background-color: red;
+            color: white;
+        }
+    </style>
+
+    </style>
+</head>
+<body>
+    <center>
+    <b>Brijesh Kumar</b>
+    <br><br>
+    <button type="button" id="btn1">Add(Prepend) Surname </button>
+</center>
+</body>
+</html>

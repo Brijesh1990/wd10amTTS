@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='js/jquery.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#del").click(function(){
+
+            $("#crt").remove();
+           })
+        });
+    </script>
+    <style>
+     table 
+     {
+        background-color: white;
+     }
+     th 
+     {
+        background-color: black;
+        color: white;
+     }
+     td 
+     {
+        text-align: center;
+     }
+     h3 
+     {
+        width: 30%;
+        background-color: black;
+        color: white;
+        padding: 15px;
+        float: right;
+        color: white;
+     }
+    </style>
+    </head>
+<body>
+
+    <div id="crt">
+    <h1 style="width: 80%; height: auto; margin: auto;">ViewCart(1)</h1>
+   <table align="center" id="tbl" width="80%" border="0">
+    <tr>
+        <th>#</th>
+        <th>Photo</th>
+        <th>Name</th>
+        <th>Qty</th>
+        <th>Price</th>
+        <th>Action</th>
+     
+    </tr>
+    <tr>
+        <td>101</td>
+        <td><img src="https://images.pexels.com/photos/2759783/pexels-photo-2759783.jpeg?auto=compress&cs=tinysrgb&w=600" width="100%" height="100px"></td>
+        <td>Puma sports</td>
+        <td><input type="number" min="1" max="10" value="1" id="qty" onchange="return tot(this.value)"></td>
+       
+        <td><input type="text" id="price" value="4500" readonly style="border: none"></td>
+        <td><a href="#" id="del">Delete</a></td>
+    </tr>
+
+    <tr>
+        <td colspan="7"><h3 align="right">Subtotal of Products is Rs. <label id="total">4500</label></h3></td>
+
+    </tr>
+
+   </table>
+
+   </div>
+
+   <script>
+    function tot()
+    {
+        var p=document.getElementById("price").value;
+        var q=document.getElementById("qty").value;
+        var t=p*q;
+        document.getElementById("total").innerHTML=+t;
+    }
+
+   </script>
+</body>
+</html>

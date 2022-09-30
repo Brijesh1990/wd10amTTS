@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='js/jquery.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+         
+             $("#btn1,#btn2,#btn3").css({"background-color":"red","border":"none","color":"white","padding":"15px"});
+
+            //  $("#para").css({"background-color":"black","border":"none","color":"white","padding":"25px","width":"50%"});
+
+              $("#btn3").hover(function(){
+                $(".navbar-link").toggle(3000);
+             })
+
+        });
+    </script>
+
+<style>
+    .navbar-link 
+    {
+        width: 80px;
+        height: auto;
+        margin: 0;
+        top: 0 !important;
+        padding: 1px;
+        display: none;
+        background-color: red;
+        padding: 5px;
+        color: white;
+    }
+    .navbar-link li 
+    {
+        list-style-type: none;
+        text-decoration: none;
+    }
+    .navbar-link a 
+    {
+        color: white;
+        list-style-type: none;
+        text-decoration: none;
+    }
+     .navbar-link:hover
+    {
+        display: block !important;
+    } 
+
+</style>
+</head>
+<body>
+    <center>
+    <button type="button" id="btn3">Dropdown^</button>
+  
+    <ul class="navbar-link">
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="#">Sign In</a></li>
+   
+    </ul>    
+ 
+    
+    </center>
+</body>
+</html>

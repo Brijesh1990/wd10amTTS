@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='js/jquery.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+         
+             $("#btn3").css({"background-color":"red","border":"none","color":"white","padding":"15px","width":"300px"});
+
+            //  $("#para").css({"background-color":"black","border":"none","color":"white","padding":"25px","width":"50%"});
+
+              $("#btn3").hover(function(){
+                $(".log").fadeToggle(1000);
+             })
+
+        });
+    </script>
+
+<style>
+    .log
+    {
+        width: 20%;
+        height: auto;
+        margin: 0;
+        display: none;
+        background-color:black;
+        padding: 15px;
+        margin-top: 2%;
+        display: none;
+        color: white;
+        -webkit-transition:0.5s ease all;
+        transition:0.5s ease all;
+    }
+    .log:hover
+    {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg) !important;
+        display: block !important;
+    } 
+    input[type="text"],input[type="password"]
+    {
+        width: 250px;
+        height: auto;
+        padding: 8px;
+        border: none;
+        border-bottom: solid 3px white;
+        background-color: black;
+    }
+    input[type="submit"]
+    {
+        width: 250px;
+        height: auto;
+        padding: 8px;
+        border: none;
+        border-bottom: solid 3px white;
+        background-color: red; 
+    }
+    input::placeholder
+   {
+    color: white;
+    font-size: 20px;
+
+   }
+
+
+</style>
+</head>
+<body>
+    <center>
+    <button type="button" id="btn3">click to Sign In</button>
+  
+    <div class="log">
+       <form>
+        <input type="text" name="nm" placeholder="Username *"><br><br>
+        <input type="password" name="pass" placeholder="Password *"><br><br>
+        
+        <input type="submit" name="log" value="SignIn">
+       </form>
+    </div>
+ 
+    
+    </center>
+</body>
+</html>
