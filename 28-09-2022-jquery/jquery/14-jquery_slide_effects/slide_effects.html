@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://code.jquery.com/jquery-3.6.1.min.js'></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+
+            // $("#slide-me").hover(function(){
+            //     $("#slide img").slideToggle(3000);
+            // })
+            // $("#slide-me").click(function(){
+            //     $("#slide img").slideToggle(3000);
+            // })
+
+            $("#slide-me").dblclick(function(){
+                $("#slide img").slideToggle(3000);
+            })
+        
+        })
+    </script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        #slide-me 
+        {
+            width: 100%;
+            height: auto;
+            padding: 5px;
+            background-color: black;
+            color: white;
+        }
+        #slide img 
+        {
+
+            width: 100%;
+            height: 550px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+  <div id="slide-me">
+    <h1>Click for slide</h1>
+  </div>
+  <div id="slide">
+    <img src="images/pexels-photo-13192126.webp">
+  </div>
+</body>
+</html>
